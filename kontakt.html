@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type="text/css" href = "style.css"/>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script src="https://kit.fontawesome.com/572a5d15ca.js" crossorigin="anonymous"></script>
+    <title>Kontakt</title>
+    <style>
+      
+        input{
+            margin-top: 5px;
+            margin-bottom: 15px;
+            background-color: white;
+            width: 90%;
+            border-radius: 3px;
+            height: 25px;
+        }
+        input {
+        outline: 0;
+         border-width: 0 0 2px;
+         border-color: black;
+         padding: 5px 10px;
+        }
+        input:focus {
+        border-color: #fe00be;
+        outline: 1px dotted #000
+        }
+        select{
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-size: 17px;
+            outline: 0;
+         border-width: 0 0 2px;
+         border-color: black;
+         padding: 5px 10px;
+         
+        }
+       
+        body{
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #submit{
+            background-color: black;
+            color: white;
+            width: 95%;
+            height: 40px;
+            font-size: 17px;
+
+        }
+        #submit:hover{
+           
+    
+            background-color: #fe00be; 
+            transition: background-color 0.4s ease-in;
+            
+        }
+     footer{
+        margin-top: 115px;
+     }
+     input[type="file"] {
+         display: none;
+        }
+
+.file-upload {
+  border: 1px solid black;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 45%;
+ 
+}
+
+.file-upload p{
+    margin-left: 5%;
+}
+.pointer{
+    cursor: pointer;
+}
+    
+      
+
+    </style>
+</head>
+<body>
+    <header >
+        <a href="fnz.html"> <img class="logo" src="img/logo.webp" alt=""></a>
+        <nav id="topnav">
+            <a  href="raspored.html">raspored</a>
+            <a class="active" href="kontakt.html">kontakt</a>
+            <a href="izvodzaci.html">skladatelji</a>
+        </nav>
+        <form id="sakrij" >
+        <label for="menu">
+           
+            <img class="menuicon" src="img/menu.webp" alt="" >
+          </label> <input type="checkbox" name="menu" value="menu" id="menu"> <nav id="sidenav">  <ul>
+            <li><a href="raspored.html">raspored</a></li>
+            <li><a class="active" href="kontakt.html">kontakt</a></li>
+            <li><a href="izvodzaci.html">skladatelji</a></li>
+         </ul></nav></form>
+       
+    </header>
+    <div id="kontakt">
+    <div id="prijava">
+       <h2> Prijave za sudjelovanje na festivalu su trenutačno zatvorene.</h2><br>
+<p>Udruga UPSUS poziva skladatelje do 35 godina da prijave svoje kompozicije na 3. Festival novog zvuka koji će se održati u Sinju 2025. godine. </p>
+        <br>
+        <h4>Prva kategorija</h4>
+        <p>Prijava kompozicija koje će izvoditi ansambl S/UMAS</p><br>
+        <h4>Druga kategorija</h4>
+        <p>Prijava kompozicija za soliste i komorne sastave</p>
+
+    </div>
+    <div id="forma" style="margin:auto; width:80%; position: relative;">
+    <form>
+        <label for="name">Ime i prezime</label><br>
+        <input type="text" id="name"><br>
+        <label for="mail">E-mail</label><br>
+        <input type="email" id="name"><br>
+        <div style="float: left; width: 42%;">
+        <label for="birthdate" style="float: left;">Datum rođenja</label><br>
+      
+        <input type="date" id="birthdate" style="width: min-content;"></div><div style="float: left; width: 42%; margin-left: 3%;">
+        <label class="file-upload" for="document" style="width: 100%; margin-bottom: 30px;"><i class="fa-solid fa-upload"  style="float: left; margin-top: 5px; margin-right: 5px;"></i><p style="font-size: 17px;"> Skenirani osobni dokument</p></label>
+        <input type="file" id="document" class="file-upload">
+        </div><br><label for="address" style="margin-top: 25px;">Adresa boravišta</label><br>
+        <input type="text" id="address"><br>
+        
+        <label for="category">Za koju se kategoriju prijavljujete?</label><br>
+        <select name="category" id="category"><br>
+            <option value="prva">Prva kategorija</option>
+            <option value="druga">Druga kategorija</option>
+          </select><br>
+          <p style="margin-bottom: 5px;">Skenirani dokumenti partitura</p>
+          <label class="file-upload" for="partitura1"><i class="fa-solid fa-upload"  style="float: left; margin-top: 5px; margin-right: 5px;"></i><p style="font-size: 17px;">Partitura 1</p></label><br>
+        <input type="file" id="partitura1"><br>
+        <label class="file-upload" for="partitura2" ><i class="fa-solid fa-upload"  style="float: left; margin-top: 5px; margin-right: 5px;"></i><p style="font-size: 17px;">Partitura 2 (za drugu kategoriju)</p></label><br>
+        <input type="file" id="partitura2"><br>
+        <label for="link">Link na snimku</label><br>
+        <input type="text" id="link"><br>
+        <input type="submit" value="Pošalji" id="submit" disabled>
+    </form></div></div>
+
+
+    <footer style="margin-top: 180px;">
+        <div>
+            <p>Festival novog zvuka</p>
+            <p><i class="fa-brands fa-instagram"></i> @festivalnovogzvuka</p>
+            <p><i class="fa-brands fa-facebook-f"></i> festivalnovogzvuka</p>
+            <p><i class="fa-regular fa-envelope"></i> festivalnovogzvuka@gmail.com</p></div>
+        <img src="img/sponzori_boja.webp" alt="">
+     </footer>
+</body>
+    
+</body>
+</html>

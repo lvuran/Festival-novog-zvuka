@@ -1,0 +1,704 @@
+*{
+    margin: 0;
+    padding: 0;
+
+  }
+ .klasa {
+  font-family: Tahoma, sans-serif;
+  }
+  header{
+    background-color:rgb(36, 30, 32);
+    z-index: 1;
+
+  }
+
+  nav {
+      float:right;
+      margin-right: 10px;
+      line-height: 140px;
+      font-size: 30px;
+      font-weight: 700;
+      font-family: 'fnzFont', sans-serif;
+    }
+  
+  
+  nav a{
+    text-decoration: none;
+    color:white;
+  text-align: center;
+ display: inline-block;
+  padding-right: 30px;
+  transition: color 0.3s ease-in-out;
+  transform: scaleY(1);
+  
+  }
+  
+  nav a:hover{
+    color: #fe00be;
+    transition: color 0.3s ease-in-out;
+    transform: scaleY(1.35);
+  
+  }
+  
+  nav a.active, :target{
+ 
+   text-decoration: underline;
+  }
+
+  .logo{
+    width: 150px;
+    position: relative;
+    left: 12px;
+  }
+  .menuicon{
+    width: 150px;
+    float: right;
+    display: none;
+  }
+  #sidenav{
+    width: 0px;
+    transition: width 0.5s;
+   
+  }
+ 
+  #sakrij{
+    display: none;
+  }
+
+#homeheader {
+    background-color: transparent; height: 0px;
+    animation-name: appear2Anim;
+  
+    animation-duration: 8s;
+}
+main {
+    background-color: black;
+}
+#content{
+  height: 100vh;
+ 
+  background-image: url(img/1bgs.webp);
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: right;
+
+  animation-name: appearAnim;
+  animation-duration: 1.5s;
+  animation-fill-mode: backwards;
+}
+
+
+
+#content a{
+  text-decoration: none;
+  color:gray;
+  font-size: 40px;
+  animation-name: appear2Anim;
+  line-height: 40px;
+  animation-duration: 8s;
+  
+}
+
+#content a:hover{
+  color: #fe00be;
+}
+
+.date{
+  position: absolute;
+  top: calc(89vh - 450px);
+  left: 75px;  
+   color: white;
+  font-size: 100px;
+  font-family: 'fnzFont', sans-serif;
+  animation-name: slideInAnim1;
+  animation-duration: 2s;
+  line-height: 100px;
+}
+
+
+#about{
+  width: 35%;
+  position: relative;
+  left: 23%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  line-height: 1.5em;
+  color:darkgray;
+  float: left;
+}
+#aboutout{
+  background-color: rgb(36, 30, 32);
+  float: left;
+  min-height: calc(100vh - 150px);
+
+}
+#dog1{
+  float: left;
+  width: 25%;
+  position: relative;
+  left: 15%;
+  top: 225px;
+}
+
+
+#raspored{
+  line-height: normal;
+   width: 75%;
+   color: white;
+  font-size: 27px;
+  line-height: 1.5em;
+ font-family: Arial, Helvetica, sans-serif;
+margin: auto;
+
+ 
+  display: flex;
+  flex-direction: row;
+
+padding-bottom: 75px;
+}
+#raspored h2{
+  font-size: 55px; 
+  font-family: 'fnzFont', sans-serif;
+  color: #fe00be;
+  line-height: 70px;
+ margin-top: 75px;
+}
+
+.naslov{
+  font-weight: bolder;
+  margin-top: 55px;
+}
+
+.mjesto{
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.half{
+  width: 40%;
+  margin-left: 5%;
+}
+
+#artists{
+  width: 80%;
+  margin: auto;
+  display: flex;
+align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.artist{
+  color: white; 
+
+
+  margin-left: 5%;
+  margin-bottom: 50px;
+}
+
+.artist img{
+  width: 410px;
+
+
+  z-index: -1;
+}
+.artistTextDiv{
+  height: 50px;
+  width: 410px;
+  
+}
+
+.artistTextDiv p{
+  transition: height 1s ease-in-out;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 0;
+  z-index: 1;
+  background-color: #fe00be;
+  overflow-y: auto;
+  font-size: 20px;
+}
+
+
+
+.artistText{
+
+  position: relative;
+  top: 0;
+
+  overflow: hidden;
+  z-index: 1;top: -411px;
+  line-height: 1.5em;
+  
+}
+
+
+.artist :hover + .artistTextDiv p {
+  padding: 15px;
+display: block;
+height: 400px;
+transition: height 1s ease-in-out;
+}
+
+
+
+.artist p :hover + .artistTextDiv p {
+  padding: 15px;
+display: block;
+height: 400px;
+transition: height 1s ease-in-out;
+}
+
+.artistTextDiv :hover{
+  display: block;
+  padding: 15px;
+  display: block;
+  height: 400px;
+}
+footer{
+  font-family: Arial, Helvetica, sans-serif;
+ background-color:rgba(36, 30, 32, 0.9); 
+ line-height: 25px;
+ color:white;
+font-size: 20px;
+line-height: 1.5em;
+float: left;
+}
+
+footer div{
+  float: left; 
+  margin-left: 5%;
+   margin-top: 35px;
+   margin-bottom: 35px;
+}
+
+footer img{
+
+
+display:flex; width: 70%; float: right; margin-right: 5%;
+}    
+
+
+
+#forma{
+  float: left;
+  background-color: white;
+  max-width: 470px;
+  width: 30%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-radius: 15px;
+  position: relative;
+left: 15%;
+  top: 100px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-size: 20px;
+
+}
+
+
+#dog2{
+  display: none;
+}
+#kontakt{
+  width: 75%;
+  position: relative;
+  margin: auto;
+}
+
+#prijava{
+  color: white;
+  line-height: 1.5em;
+  width:33%;
+  float: left;
+  position: relative;
+  left: 10%;
+  top: 150px;
+  font-size: 20px;
+
+}
+
+
+@keyframes slideInAnim{
+  0% {left: -25%}
+  100%{left:7%}
+  }
+
+  @keyframes slideInAnim1{
+    0% {left: -25%}
+    100%{left:75px}
+    }
+
+@keyframes appearAnim{
+    0% {opacity:0%}
+    100%{opacity:100%}
+    }
+  @keyframes appear2Anim {
+    0% {opacity:0%}
+    30%{opacity: 0%;}
+    100%{opacity:100%}
+    
+  }
+
+
+@font-face {
+  font-family: 'fnzFont'; 
+  src: url('font/cc-ultimatum-bold-webfont.woff2') format('woff2'),
+      url('font/cc-ultimatum-bold-webfont.woff') format('woff'); 
+}
+
+
+ 
+@media screen and (min-width: 651px) and (max-width: 960px) {
+  #content{
+    background-size: 100%;
+    background-clip: calc(100vh);
+  background-image: url(img/2bgs.webp);
+  
+  }
+  
+  #about{
+    width: 85%;
+  left: 8%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+  
+    line-height: 1.5em;
+    color:darkgray;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  
+  
+  #dog1{
+    display: none;
+  }
+  
+  #dog2{
+    display: block;
+    width: 40%;
+    position: relative;
+    margin:auto;
+    margin-bottom: 150px;
+  }
+  footer div{
+    margin-bottom: 0px;
+  }
+  footer img{
+    width: 80%;
+    float: none;
+    margin-left:5%;
+  }
+  
+  #prijava{
+    width: 80%;
+    margin-right: 0px;
+  }
+  .date{
+  top: calc(63vw);
+  font-size: 73px;
+  line-height: 73px;
+
+  }
+  }
+
+
+
+@media screen and (max-width: 1420px) {
+  
+footer img{
+  width: 90%;
+  float: none;
+  margin-left:5%;
+}
+footer div{
+  margin-bottom: 0px;
+}
+#raspored{
+  flex-direction: column;
+
+
+}
+
+.half{
+ width: 75%;
+}
+
+
+#prijava{
+top: 100px;
+ float: none;
+width: 80%;
+  margin-bottom: 120px;
+}
+
+
+
+#forma{
+  padding-top: 35px;
+  padding-bottom: 35px;
+  width: 70%;
+  left: 10%;
+ 
+margin-bottom: 70px;
+ 
+}
+
+
+
+}
+
+
+
+  
+  @media screen and (max-width: 650px) {
+    #topnav{
+        display: none;
+    }
+    .menuicon{
+        display: block;
+       position: absolute;
+       right: 0px;
+    }
+ 
+    #sakrij{
+        display: block;
+        float: right;
+   
+    }
+    [type=checkbox] { 
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      
+      /* IMAGE STYLES */
+      [type=checkbox] + img {
+        cursor: pointer;
+      }
+      
+      /* CHECKED STYLES */
+    #sidenav{
+      overflow: hidden;
+    }
+
+      [type=checkbox]:checked + #sidenav{
+           
+            width: 60%;
+            float: right;
+          position: absolute;
+          right: 0px;
+          top: 80px;
+            background-color: rgb(217,217,217);
+            line-height: 50px;
+            text-align: left;
+            color: rgb(36, 30, 32);
+            height:calc( 100vh - 80px);
+            font-size: 25px;
+        }
+
+
+      nav{
+        position: relative;
+        margin-right: 0;
+  
+        padding-top: 50px;
+        color: rgb(36, 30, 32);
+        line-height: 70px;
+        z-index: 3;
+      }
+      
+      .logo{
+        width:75px;
+      }
+ 
+      .menuicon{
+        width: 75px;
+      }
+        ul{
+            list-style: none;
+            padding-left: 20%;
+            
+            
+        }
+       
+        nav a{
+            color: rgb(36, 30, 32);
+        }
+
+    #homeheader {
+        background-color: transparent;
+        height: 75px;
+        background-color: rgb(36, 30, 32);
+    }
+#content{
+  height: 95vw ;
+ 
+  background-image: url(img/bgs1.webp);
+  background-repeat: no-repeat;
+background-size: 110%;
+  background-position: top;
+
+  animation-name: appearAnim;
+  animation-duration: 1.5s;
+  animation-fill-mode: backwards;
+}
+
+
+.artistTextDiv{
+  height: 1px;
+  width: 100%;
+  
+  
+}
+
+
+
+
+.artist p :hover + .artistTextDiv p{
+  height:100vw;
+  
+  }
+
+  .artistText{
+    top: -79vw;
+  }
+
+#artists{
+  width: 80%;
+  padding-top: 45px;
+  padding-bottom: 70px;
+}
+.artist img{
+  margin-top: 20px;
+margin-bottom: 20px;
+  width: 100%;
+}
+.artist{
+  margin-bottom: 0px;
+}
+
+#content a{
+  text-decoration: none;
+  color:gray;
+  font-size: 40px;
+  animation-name: appear2Anim;
+  line-height: 20px;
+  animation-duration: 8s;
+  
+}
+
+.naslov{
+  
+  margin-top: 20px;
+}
+
+.date{
+  position: absolute;
+  top: calc(60vw);
+  left: 7%;  
+   color: white;
+  font-size: 50px;
+  font-family: 'fnzFont', sans-serif;
+  animation-name: slideInAnim;
+  animation-duration: 2s;
+  line-height: 50px;
+}
+
+
+
+#about{
+  width: 85%;
+left: 8%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+
+  line-height: 1.5em;
+  color:darkgray;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+#homeheader{
+  animation-duration: 0s;
+}
+#dog1{
+  display: none;
+}
+
+#dog2{
+  display: block;
+  width: 40%;
+  position: relative;
+  margin:auto;
+  margin-bottom: 150px;
+}
+
+#raspored{
+  flex-direction: column;
+width: 85%;
+  padding-top: 0px;
+  font-size: 17px;
+}
+
+
+#raspored h2{
+ 
+    font-size: 35px;
+ margin-top: 55px;
+}
+
+
+.half{
+
+  width: 85%;
+}
+
+
+#artists{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#prijava{
+  width: 85%;
+  font-size: 17px;
+
+}
+
+.artist{
+  margin-left: 0px;
+  font-size: 17px;
+}
+
+#forma{
+  padding-top: 35px;
+  padding-bottom: 35px;
+  font-size: 17px;
+  top: 70px;
+margin-bottom: 70px;
+
+}
+
+
+
+
+footer div{
+  float: left; margin-left: 8%; margin-top: 35px;
+  font-size: 17px;
+}
+
+
+
+
+      }
+  
+
